@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Domain", "Emtelco.Domain\Emtelco.Domain.csproj", "{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Application", "Emtelco.Application\Emtelco.Application.csproj", "{FCDD48F5-6346-4323-8D86-4DD3656B4991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 		{6E0FE3BF-75AD-4340-B3C3-F096F57B47CD} = {AE34D662-174D-410D-BC6C-5DAC5720AF24}
 		{95E82DA4-35CD-4AF6-A74B-219D70BEE3D4} = {AE34D662-174D-410D-BC6C-5DAC5720AF24}
 		{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02} = {C5343CFE-25A8-4F89-8B8D-0503C053D8B3}
+		{FCDD48F5-6346-4323-8D86-4DD3656B4991} = {C5343CFE-25A8-4F89-8B8D-0503C053D8B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AACC4E77-9C63-4A14-A996-C86818B0C560}
