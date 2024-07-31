@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Domain", "Emtelco.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Application", "Emtelco.Application\Emtelco.Application.csproj", "{FCDD48F5-6346-4323-8D86-4DD3656B4991}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Api", "Emtelco.Api\Emtelco.Api.csproj", "{D6DABF98-853A-410D-8E5E-300204DC8CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCDD48F5-6346-4323-8D86-4DD3656B4991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DABF98-853A-410D-8E5E-300204DC8CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DABF98-853A-410D-8E5E-300204DC8CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DABF98-853A-410D-8E5E-300204DC8CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DABF98-853A-410D-8E5E-300204DC8CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{95E82DA4-35CD-4AF6-A74B-219D70BEE3D4} = {AE34D662-174D-410D-BC6C-5DAC5720AF24}
 		{0CBAC15E-0B46-4870-9D21-81CE1E2BFC02} = {C5343CFE-25A8-4F89-8B8D-0503C053D8B3}
 		{FCDD48F5-6346-4323-8D86-4DD3656B4991} = {C5343CFE-25A8-4F89-8B8D-0503C053D8B3}
+		{D6DABF98-853A-410D-8E5E-300204DC8CA3} = {6E0FE3BF-75AD-4340-B3C3-F096F57B47CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AACC4E77-9C63-4A14-A996-C86818B0C560}

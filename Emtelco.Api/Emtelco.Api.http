@@ -1,0 +1,6 @@
+@Emtelco.Api_HostAddress = http://localhost:5231
+
+GET {{Emtelco.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
