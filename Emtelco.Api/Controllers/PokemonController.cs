@@ -1,6 +1,5 @@
 ﻿using Emtelco.Application.Features.Pokemon.Queries.GetPokemonDetail;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Emtelco.Api.Controllers
@@ -20,8 +19,16 @@ namespace Emtelco.Api.Controllers
         public async Task<IActionResult> BuscarPokemonPorNombre([FromRoute] string pokemon)
         {
             var getPokemonDetailQuery = new GetPokemonDetailQuery() { Name = pokemon };
+            var response = await _mediator.Send(getPokemonDetailQuery);
 
-            return Ok(await _mediator.Send(getPokemonDetailQuery));
+            if(response == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(await _mediator.Send(getPokemonDetailQuery));
+            }
         }
     }
 }

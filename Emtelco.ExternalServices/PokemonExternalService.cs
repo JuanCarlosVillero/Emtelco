@@ -2,7 +2,6 @@
 using Emtelco.Application.Contracts.ExternalServices;
 using Emtelco.Domain;
 using Emtelco.ExternalServices.ExternalDataContract;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Emtelco.ExternalServices
