@@ -25,4 +25,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Emtelco.Application\Emtelco.Application.csproj" />
+  </ItemGroup>
+
 </Project>
