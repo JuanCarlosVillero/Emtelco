@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Emtelco.Application.Contracts.ExternalServices;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using System.Runtime.ConstrainedExecution;
 
 namespace Emtelco.Application.Features.Pokemon.Queries.GetPokemonDetail
@@ -12,12 +13,15 @@ namespace Emtelco.Application.Features.Pokemon.Queries.GetPokemonDetail
 
         public readonly IPokemonExternalService _pokemonExternalService;
         public readonly IMapper _mapper;
+        private readonly ILogger<GetPokemonDetailQueryHandler> _logger;
 
         public GetPokemonDetailQueryHandler(IPokemonExternalService pokemonExternalService,
-            IMapper mapper)
+            IMapper mapper,
+            ILogger<GetPokemonDetailQueryHandler> logger)
         {
             _mapper = mapper;
             _pokemonExternalService = pokemonExternalService;
+            _logger = logger;
         }
 
         public async Task<PokemonDetailVm> Handle(GetPokemonDetailQuery request,
@@ -28,6 +32,7 @@ namespace Emtelco.Application.Features.Pokemon.Queries.GetPokemonDetail
 
             if (validationResult.Errors.Count() > CERO)
             {
+                _logger.LogError($"Error al consultar el pokemon: {request.Pokemon}");
                 throw new Exceptions.ValidationException(validationResult);
             }
 
