@@ -15,6 +15,16 @@ namespace Emtelco.Api
 
             builder.Services.AddControllers();
 
+            builder.Services.AddCors(
+                options => options.AddPolicy(
+                    "open",
+                    policy => policy.WithOrigins([builder.Configuration["ApiUrl"] ?? "https://localhost:7144",
+                        builder.Configuration["FrontedUrl"] ?? "https://localhost:7080"])
+            .AllowAnyMethod()
+            .SetIsOriginAllowed(pol => true)
+            .AllowAnyHeader()
+            .AllowCredentials()));
+
             builder.Services.AddSwaggerGen();
 
             return builder.Build();
@@ -22,6 +32,8 @@ namespace Emtelco.Api
 
         public static WebApplication ConfigurePipeline(this WebApplication app)
         {
+            app.UseCors("open");
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
