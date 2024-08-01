@@ -1,4 +1,5 @@
 ﻿using Emtelco.Application;
+using Emtelco.ExternalServices;
 
 namespace Emtelco.Api
 {
@@ -8,6 +9,7 @@ namespace Emtelco.Api
             this WebApplicationBuilder builder)
         {
             builder.Services.AddApplicationServices();
+            builder.Services.AddExternalServices();
 
             builder.Services.AddHttpContextAccessor();
 
