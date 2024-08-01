@@ -1,4 +1,5 @@
-﻿using Emtelco.Application;
+﻿using Emtelco.Api.Middleware;
+using Emtelco.Application;
 using Emtelco.ExternalServices;
 
 namespace Emtelco.Api
@@ -39,6 +40,8 @@ namespace Emtelco.Api
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCustomExceptionHandler();
 
             app.UseHttpsRedirection();
             app.MapControllers();

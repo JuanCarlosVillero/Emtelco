@@ -18,7 +18,7 @@ namespace Emtelco.Api.Controllers
         [HttpGet("habilidadesOcultas/{pokemon}", Name = "BuscarPokemonPorNombre")]
         public async Task<IActionResult> BuscarPokemonPorNombre([FromRoute] string pokemon)
         {
-            var getPokemonDetailQuery = new GetPokemonDetailQuery() { Name = pokemon };
+            var getPokemonDetailQuery = new GetPokemonDetailQuery() { Pokemon = pokemon };
             var response = await _mediator.Send(getPokemonDetailQuery);
 
             if(response == null)
