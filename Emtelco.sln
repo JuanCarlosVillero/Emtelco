@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.Api", "Emtelco.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtelco.ExternalServices", "Emtelco.ExternalServices\Emtelco.ExternalServices.csproj", "{42D5DCE9-6667-426A-A807-F28801997CF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emptelco.Api.IntegrationTest", "Emptelco.Api.IntegrationTest\Emptelco.Api.IntegrationTest.csproj", "{1D267A00-1B81-4622-AE65-A7931BDFD412}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{42D5DCE9-6667-426A-A807-F28801997CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D5DCE9-6667-426A-A807-F28801997CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D5DCE9-6667-426A-A807-F28801997CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D267A00-1B81-4622-AE65-A7931BDFD412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D267A00-1B81-4622-AE65-A7931BDFD412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D267A00-1B81-4622-AE65-A7931BDFD412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D267A00-1B81-4622-AE65-A7931BDFD412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{FCDD48F5-6346-4323-8D86-4DD3656B4991} = {C5343CFE-25A8-4F89-8B8D-0503C053D8B3}
 		{D6DABF98-853A-410D-8E5E-300204DC8CA3} = {6E0FE3BF-75AD-4340-B3C3-F096F57B47CD}
 		{42D5DCE9-6667-426A-A807-F28801997CF2} = {95E82DA4-35CD-4AF6-A74B-219D70BEE3D4}
+		{1D267A00-1B81-4622-AE65-A7931BDFD412} = {6CD149F1-B409-48B7-869A-5A7D9E7319E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AACC4E77-9C63-4A14-A996-C86818B0C560}
